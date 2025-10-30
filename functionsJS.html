@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Functions.JS</title>
+    </head>
+    <body>
+        <script>
+            function add1(){
+            let a,b,c;
+                a=57;
+                b=10;
+                c=a+b;
+                return c;
+            }  
+            let a=add1();
+            document.write("The answer to the addition equation is "+a) 
+
+
+             function add() {
+                    let a, b, c;
+                    a = 57;
+                    b = 10;
+                    c = a + b;
+                    document.write("<br>")
+                    document.write("The addition is "+c)
+            
+
+             }
+             add();
+             
+// Pasiing the parameter/arguments
+
+             function evenOdd(number){
+                if (number%2==0){
+                    document.write("This number is even")
+                }
+                else{
+                    document.write("This number is odd")
+                }
+             }
+             let number=prompt("ENTER A NUMBER")
+             evenOdd(number)
+        </script>
+    </body>
+</html>
