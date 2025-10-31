@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1 id="demo">Welcome</h1>
+        <p>Hi Anjali, how are you?</p>
+        <p>Whats your favorite color></p>
+        <p>How are you doing?</p>
+        <script>
+            // Creating an element.
+            let r=document.createElement("div");
+             r.id="para"
+             r.className="alert"
+             r.innerHTML="You have created a paragraph";
+             document.body.append(r)
+            //  Modify
+            document.getElementById("demo").innerHTML="Welcome, Anjali";
+            document.querySelector('p').style.backgroundColor="cyan";
+        </script>
+    </body>
+</html>
