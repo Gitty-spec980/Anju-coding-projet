@@ -1,0 +1,43 @@
+<html>
+   <head>
+    <title>Scared</title>
+    <style>
+        body.dark {
+          background-color: firebrick;
+        }
+        button {
+            display: block;
+            margin: 50px;
+        }
+        .textEntry{
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        
+    </style>
+   </head> 
+  <body>
+    <h1>The Basememt</h1>
+    <p id="story">I wanted to find my friend, and he was hiding in thr basement.</p>
+    <button onclick="goDark()">Get in the Mood</button>
+    <div class="textEntry">Type Your Name here, If you dare heheehh</div>
+    <input type="text" id="name">
+    <button onclick="typeAndScream()"> Please,Please,Please,Please Don't click Me!</button>
+    <button onclick="finishTheStory()">Tell me what Happened!</button>
+    <audio id="audio" src="http://reboot-me.com/ouch.mp3" type="audio/mpeg"></audio>
+    <script>
+        function typeAndScream() {
+            document.getElementById("audio").play();
+            var personName=document.getElementById("name").value;
+            alert("I told you not to do that" + personName);
+        }
+        function goDark() {
+            document.body.className="dark";
+        }
+        function finishTheStory() {
+            document.getElementById("story").innerHTML="So I carefully searched the damp dungeon.And I caught a glimpse of his eyes.There you are!";
+        }
+    </script>
+   
+  </body>
+</html>
