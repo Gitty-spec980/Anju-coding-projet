@@ -1,5 +1,126 @@
 <html>
     <head>
+        <style>
+            body {
+                font-family:cursive;
+                margin: 0;
+                background-color: rgb(205, 162, 131);
+            }
+
+            .navbar {
+                background: chocolate;
+                padding: 15px;
+                text-align: center;
+            }
+
+            .navbar a {
+                color: antiquewhite;
+                text-decoration:double;
+                margin: 15px;
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            .carousel{
+                width: 80%;
+                margin: 30px auto;
+                overflow: hidden;
+                border-radius: 15px;
+                box-shadow: 0 0 15px black 0.3;
+             }
+
+             .slides {
+                display: flex;
+                width: 200%;
+                animation: slide 12s infinite;
+             }
+             .slides img {
+                width: 100%;
+             }
+             @keyframes slide {
+                0% {
+                    margin-left: 0;
+                }
+
+                30%{
+                    margin-left: 0;
+                }
+                35%{
+                    margin-left: -100%;
+                }
+                65%{
+                    margin-left: -100%;
+                }
+                70%{
+                    margin-left: -200%;
+                }
+                100%{
+                    margin-left: -200%;
+                }
+                    
+                
+             }
+             .home-text {
+                text-align: center;
+                padding: 20px;
+                color:black
+             }
+             .section{
+                width: 85%;
+                margin:40px auto;
+                background: white;
+                padding: 25px;
+                border-radius:20px;
+                box-shadow:0 0 20px black
+             }
+             .section h2{
+                text-align: center;
+                font-size: 32px;
+                margin-bottom:15px;
+                color: dimgrey;
+             }
+             .section p{
+                font-size: 18px;
+                color: grey;
+                line-height: 1.7;
+                text-align:center;
+             }
+             .card-container{
+                margin-top:30px;
+                display:grid;
+                grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+                gap:25px;
+             }
+             .card{
+                background: whitesmoke;
+                padding: 20px;
+                text-align:center;
+                border-radius:18px;
+                box-shadow: 0 0 10px black;
+                transition:0.3s;
+             }
+             .card:hover{
+                transform:translateY(-8px);
+                box-shadow: 0 0 18px black 0.3;
+             }
+             .card img{
+                width:100%;
+                height:170px;
+                object-fit:cover;
+                border-radius:15px;
+
+             }
+
+             .card h3{
+                margin:12px 0;
+                color: black;
+                font-size: 22px;
+             }
+             .card p{
+                font-size:16px;
+                color: hotpink;
+             }
+        </style>
         
     </head>
     <body>
@@ -19,6 +140,41 @@
 <div class="home-text">
     <h1> Welcome To The Dog Paradise!!🐶</h1>
     <p> Explore the different types of dog breeds and learn more about your loving companions!</p>
+</div>
+<div class="section">
+    <h2> Reasons Why Dogs Are Amazing</h2>
+    <p> Dogs can help you feel up when you feel down. They make you feel happy when you are lonley and so forth. Having dogs by your side make up for a family member or friend. As people like to say..... Dog Is A Man's Best Friend!</p>
+</div>
+<div class="section">
+    <h2> Feautered Popular Dog Breeds</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <img src="https://www.keystonepuppies.com/wp-content/uploads/2024/06/image_123650291-1024x786.jpg">
+            <h3> Labrador Retrievers </h3>
+            <p>High intelligence, an eager-to-please attitude, a strong love for water and retrieving, and the need for significant
+            daily exercise and mental stimulation.</p>
+
+        </div>
+        <div class="card">
+            <img src="https://cdn11.bigcommerce.com/s-fduu8evurl/product_images/uploaded_images/blue.jpg">
+            <h3> French Bulldogs </h3>
+            <p>Playful, adaptable, and affectionate nature</p>
+            </div>
+            
+<div class="card">
+    <img src="https://www.rover.com/blog/wp-content/uploads/cocker-spaniel-puppy-2.jpg">
+    <h3> Cocker Spaniel </h3>
+    <p>affectionate, cheerful, and intelligent nature</p>
+</div>
+<div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgD--T6OTrSzx484uJxCDB_sVHVIizKVxwmg&s">
+    <h3> Golden Retrievers </h3>
+    <p> A popular medium-to-large sized dog breed known for its intelligent, affectionate, and trustworthy temperament, as well
+    as its striking golden coat</p>
+</div>
+    </div>
+
 </div>
 
     </body>
